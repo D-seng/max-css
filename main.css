@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+#product-overview {
+    background: url("./images/freedom.jpg") left 10% bottom 80%/cover border-box;
+    /* background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left 10% bottom 80%;
+    background-origin: border-box;
+    background-clip: border-box; */
+    width: 100%;
+    height: 600px;
+    padding: 10px;
+    position: relative;
+    /* border: 5px dashed red; */
+    margin-top: 100px;
+}
+
+#deserve {
+    position: absolute;
+    bottom: 25px;
+}
+.section-title {
+    color: #0d7e2b;
+    text-align: center;
+}
+
+#product-overview h1 {
+    color: white;
+    font-family: 'Anton', sans-serif;
+}
+
+/* h1 {
+    font-family: sans-serif;
+} */
+
+
+.plans {
+    display: flex;
+    justify-content: center;
+}
+
+.plan__item {
+    /* display: inline-block; */
+    background: #c2ebcc;
+    border: 2px solid rgb(1, 87, 1);
+    border-radius: 1em;
+    margin: 2em;
+    padding: 1em;
+    width: 25%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.recommended {
+    background: #057017;
+    color: whitesmoke;
+    box-shadow: 2px 2px 2px 3px rgba(0,0,0,.25);
+}
+
+.plan__item__annotation {
+    font-size: 1.25em;
+    background: whitesmoke;
+    color: rgb(0, 78, 13);
+    box-shadow: 1px 1px 1px 1px rgba(245,245,245,.25);
+    border-radius: 0.25em;
+    padding: 0.2em;
+}
+
+.plan__item__title {
+    color: rgb(0, 78, 5);
+}
+.plan__item__price {
+    color: #777;
+}
+
+.plan__item__annotated__price {
+    color: rgb(153, 186, 190)
+}
+.plan__item__features {
+    list-style: none;
+}
+
+.plan__item__features li {
+    margin: 0.4em 0;
+}
+
+.button {
+    background: darkgreen;
+    color: whitesmoke;
+    border-radius: .65em;
+    border: 1px solid whitesmoke;
+    padding: .75em;
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+    color: darkgreen;
+    background: whitesmoke;
+}
+.button:focus {
+    outline: none;
+}
+
+.button__annotated {
+    background: whitesmoke;
+    color: darkgreen;
+}
+.button__annotated:active,
+.button__annotated:hover {
+    color: whitesmoke;
+    background: darkgreen;
+}
+
+#key-features {
+    background: #da4f7d
+}
+#key-features .section-title {
+    color: whitesmoke;
+    margin: 20px 0px 0px 0px;
+    padding: 20px 0px;
+}
+.feature-list {
+    list-style: none;
+    color: whitesmoke;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.feature-list > li {
+    display: inline-block;
+    width: 30%;
+    list-style: none;
+}
+
+.feature__image {
+    background: #ffcede;
+    width: 128px;
+    height: 128px;
+    border: 2px solid #242424;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.feature-list__description {
+    text-align: center;
+}
