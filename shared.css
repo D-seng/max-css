@@ -75,7 +75,7 @@
 .main-footer {
     background: #222;
     padding: 20px 0px;
-    display: flex;
+    /* display: flex; */
     grid-area: footer;
 }
 
@@ -87,7 +87,7 @@
 
 .main-footer__item {
     list-style: none;
-    /* margin: 0 20px; */
+    margin: 0 20px;
 }
 
 .main-footer__item > a {
