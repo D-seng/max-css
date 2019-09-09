@@ -5,14 +5,12 @@
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
+    grid-area: content;
 }
 
-#page-wrapper {
-  margin-top: 120px;
-}
+
 .testimonial {
   font-size: 20px;
-  margin: 48px 0;
 }
   
 .testimonial__list {

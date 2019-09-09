@@ -10,31 +10,54 @@
   <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
   <link rel="stylesheet" href="../shared.css">
-  <link rel="stylesheet" href="packages.css">
-  
+  <link rel="stylesheet" href="packages.css">  
 </head>
 
-<body >
+<body>
+    <div class="backdrop"></div>
+    <div class="modal">
+        <h1 class="modal__title">Do you want to continue?</h1>
+        <div class="modal__actions">
+            <a href="start-hosting/index.html" class="modal__action">Yes</a>
+            <button class="modal__action modal__action--negative" type="button">No</button>
+        </div>
+    </div>
   <header class="main-header">
-        <nav>
-            <ul class="main-nav__items">
-                <li class="main-nav__brand push-left">
-                    <a href="../index.html"><img alt="Your source for hosting" src="../images/uhost-icon.png" height="50%" width="50%"></a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="index.html">Packages</a>
-                </li>
-                <li class="main-nav__item">
+            <button class="toggle-button">
+                <span class="toggle-button__bar"></span>
+                <span class="toggle-button__bar"></span>
+                <span class="toggle-button__bar"></span>
+            </button>
+            <div class="main-nav__items">
+                <div class="main-nav__brand push-left">
+                    <a href="../index.html"><img alt="Your source for hosting" src="../images/uhost-icon.png" height="50%"
+                            width="50%"></a>
+                </div>
+                <div class="main-nav__item">
+                    <a href="packages/index.html">Packages</a>
+                </div>
+                <div class="main-nav__item">
                     <a href="../customers/index.html">Customers</a>
-                </li>
-                <li class="main-nav__item main-nav__item--cta">
+                </div>
+                <div class="main-nav__item main-nav__item--cta">
                     <a href="start-hosting/index.html">Start Hosting</a>
-                </li>
-            </ul>
-        </nav>
+                </div>
+            </div>
     </header>
-<div id="page-wrapper">
-<div id="page-grid">
+    <nav class="mobile-nav">
+        <ul class="mobile-nav__items">
+            <li class="mobile-nav__item">
+                <a href="packages/index.html">Packages</a>
+            </li>
+            <li class="mobile-nav__item">
+                <a href="../customers/index.html">Customers</a>
+            </li>
+            <li class="mobile-nav__item mobile-nav__item--cta">
+                <a href="start-hosting/index.html">Start Hosting</a>
+            </li>
+        </ul>
+    </nav>
+
   <main class=plan-descriptions>
     <section id="plus" class="plan__item">
             <a href="#">
@@ -63,7 +86,7 @@
   </main>
 
   <footer class="main-footer">
-        <nav>
+ 
             <ul class="main-footer__items">
                 <li class="main-footer__item">
                     <a href="#">About</a>
@@ -72,10 +95,11 @@
                     <a href="#">Contact</a>
                 </li>
             </ul>
-        </nav>
+        
     </footer>
-</div>
-</div>
+
+
 </body>
+<script src="../shared.js"></script>
 
 </html>

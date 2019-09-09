@@ -2,16 +2,6 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-}
-
-/* .page-wrapper {
-  display: flex;
-  flex-direction: column;
-} */
-
 #plus {
   background: rgb(240, 255, 240, .9);
   position: relative;
@@ -25,30 +15,14 @@ body {
    background: #248d36;
 }
 
-#page-wrapper {
-  position: relative;
-}
-
-#page-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "main"
-                       "footer";
-  grid-gap: 20px;
-  position: absolute;
-  width: 100%;
-  top: 96px;
-}
-
 .plan-descriptions {
   display: flex;
   flex-direction: column;
   justify-content: center;
   vertical-align: vertical;
   background-image: url('../images/plans-background.jpg');
-  /* position: fixed; */
-  grid-area: main;
-  margin-top: 15px;ß
+  grid-area: content;
+  width: minmax(200px, 300px);
 }
 
 .plan__badge {
@@ -57,13 +31,22 @@ body {
   right: 20px;
   background: red;
   color: whitesmoke;
+  transform: rotateZ(45deg);
 }
 
 .plan__item {
   border: 2px solid #777;
-  width: 600px;
   margin: 10px;
   padding: 10px;
+    width: minmax(200px, 300px);
+}
+@media (min-width: 40rem) {
+  .plan__descriptions {
+    width: 600px;
+  }
+  .plan__item {
+    width: 600px;
+  }
 }
 
 .plan__item a {
